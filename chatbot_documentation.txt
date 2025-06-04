@@ -1,0 +1,34 @@
+Financial Chatbot Prototype Documentation
+
+1. Overview:
+This chatbot prototype responds to predefined financial queries about Microsoft, Tesla, and Apple using data from their 10-K filings. It is designed to provide quick, accurate responses for an AI-powered financial chatbot.
+
+2. Predefined Queries:
+The chatbot handles the following queries (case-insensitive, must include company name):
+- "What is the total revenue for [Company]?"
+- "How has net income changed for [Company]?"
+- "What is the total assets for [Company]?"
+- "What is the cash flow from operating activities for [Company]?"
+- "What is the financial health of [Company]?"
+
+3. Functionality:
+- Loads financial data from a CSV file (financial_data.csv) created in the previous task.
+- Uses pandas to calculate year-over-year changes for metrics like net income.
+- Matches user input to predefined queries using if-else logic and returns formatted responses.
+- Runs in a command-line interface using Python's input() function.
+
+4. Limitations:
+- Only responds to specific queries for Microsoft, Tesla, or Apple.
+- Requires exact phrasing with company names for accurate matching.
+- Relies on a pre-existing CSV file with correct financial data.
+- No natural language processing; limited to rule-based logic.
+- Command-line only, no web interface.
+
+5. How to Run:
+- Ensure Python, pandas, and the CSV file (financial_data.csv) are available.
+- Run the script: `python financial_chatbot.py`
+- Enter queries or type 'exit' to quit.
+
+6. Test Results:
+- Tested with queries like "What is the total revenue for Apple?" and "How has net income changed for Tesla?".
+- Successfully returned responses based on placeholder data (update with actual CSV data for accurate results).
